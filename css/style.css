@@ -110,6 +110,8 @@ nav ul li a:hover {
 .banner-text {
   flex: 1;
   min-width: 300px;
+  padding: 15px 170px;
+  margin-top: 20px;
 }
 
 .banner-text h1 {
@@ -425,12 +427,16 @@ nav ul li a:hover {
   }
   .features-gallery {
   grid-template-columns: repeat(1, 1fr);
+  display: contents;
   }
   .features-content {
     min-width: 240px;
   }
   .feature-content {
     min-width: 240px;
+  }
+  .banner-text {
+    padding: 0 10px;
   }
 }
 
