@@ -14,6 +14,15 @@
   --gap: 32px; /* used for spacing */
   --padding: 40px; /* used for padding */
 }
+header {
+  margin: auto;
+}
+section {
+  margin: auto;
+}
+footer {
+  margin: auto;
+}
 
 * {
   margin: 0;
@@ -35,7 +44,7 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .container {
-  width: 90%;
+  /* width: 90%; */
   max-width: 1200px;
   margin: auto;
 }
@@ -162,7 +171,7 @@ nav ul li a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   flex: 1;
-  min-width: 280px;
+  /* min-width: 280px; */
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 .feature-img img:hover {
@@ -256,7 +265,7 @@ nav ul li a:hover {
 
 .feature-image {
   flex: 1;
-  min-width: 280px;
+  /* min-width: 280px; */
   position: relative;
 }
 
@@ -408,6 +417,20 @@ nav ul li a:hover {
 @media (max-width: 1077px) {
   .facts-grid {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .facts-grid {
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+  }
+  .features-gallery {
+  grid-template-columns: repeat(1, 1fr);
+  }
+  .features-content {
+    min-width: 240px;
+  }
+  .feature-content {
+    min-width: 240px;
   }
 }
 
